@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela=document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle="grey";
+    pincel.fillRect(0,0,600,400)
+    function random_rgba() {
+        var o = Math.round, r = Math.random, s = 255;
+        return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+    }
+    function exibeCirirculo(evento){
+        var x= evento.pageX-tela.offsetLeft;
+        var y = evento.pageY-tela.offsetTop;
+        var RGB = random_rgba();
+        pincel.fillStyle = RGB;
+        pincel.beginPath();
+        pincel.arc(x,y,20,0,2*3.14);
+        pincel.fill();
+    }
+
+    tela.onclick=exibeCirirculo;
+    
+
+</script>
