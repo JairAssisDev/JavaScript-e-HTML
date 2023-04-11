@@ -116,7 +116,7 @@ desenhaQuadradogrey21(l7,0);
 desenhaQuadradogrey21(l7,1);
 desenhaQuadradoBlack(l7,2);
 desenhaQuadradoBlack(l7,3);
-desenhaQuadradoMediumOrchid(l7,4);
+desenhaQuadradoDarkOrchid(l7,4);
 desenhaQuadradoBlack(l7,5);
 desenhaQuadradogrey21(l7,6);
 desenhaQuadradoBlack(l7,7);
@@ -131,6 +131,4 @@ desenhaQuadradoMediumOrchid(l8,4);
 desenhaQuadradogrey21(l8,5);
 desenhaQuadradoBlack(l8,6);
 desenhaQuadradogrey21(l8,7);
-
-
 
